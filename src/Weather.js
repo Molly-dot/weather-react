@@ -1,6 +1,4 @@
 import React from "react";
-import axios from "axios";
-import Loader from "react-loader-spinner";
 
 export default function Weather() {
   return (
@@ -28,7 +26,7 @@ export default function Weather() {
               </div>
             </div>
           </form>
-          <h1 id="city"></h1>
+          <h1 id="Paris"></h1>
           <ul>
             <img
               src="http://openweathermap.org/img/wn/04d@2x.png"
@@ -45,13 +43,13 @@ export default function Weather() {
                 <div className="float-left">
                   <span className="temperature" id="temperature"></span>
                   <span className="units">
-                    <a href="#" id="celsius-link" class="active">
+                    <span href="#" id="celsius-link" class="active">
                       °C
-                    </a>{" "}
+                    </span>{" "}
                     |
-                    <a href="#" id="fahrenheit-link">
+                    <span href="#" id="fahrenheit-link">
                       °F
-                    </a>
+                    </span>
                   </span>
                 </div>
               </div>
@@ -72,6 +70,7 @@ export default function Weather() {
         <a
           href="https://github.com/Molly-dot/weather-app-updated"
           target="_blank"
+          rel="noreferrer"
           style={{ textDecoration: "none" }}
         >
           Open-source code
