@@ -26,7 +26,7 @@ export default function Weather() {
               </div>
             </div>
           </form>
-          <h1 id="Paris"></h1>
+          <h1>Paris</h1>
           <ul>
             <img
               src="http://openweathermap.org/img/wn/04d@2x.png"
