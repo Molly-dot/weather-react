@@ -1,16 +1,25 @@
 import React from "react";
-import "./App.css";
 import Weather from "./Weather";
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Weather App</h1>
-        <Weather />
-      </header>
+      <div className="container">
+        <Weather defaultCity="Paris" />
+
+        <footer>
+    
+           <a
+          href="https://github.com/Molly-dot/weather-app-updated"
+          target="_blank"
+          rel="noreferrer"
+          style={{ textDecoration: "none" }}
+        >
+          Open-source code
+        </a>
+        by Molly Townsend
+      </div>
     </div>
   );
 }
-
-export default App;
